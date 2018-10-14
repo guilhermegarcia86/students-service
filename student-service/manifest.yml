@@ -1,0 +1,7 @@
+applications:
+- name: student-service
+  path: target/student-service-0.0.1-SNAPSHOT.jar
+  buildpack: https://github.com/cloudfoundry/java-buildpack.git 
+  memory: 1G
+  services:
+  - registry-service
